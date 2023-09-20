@@ -4,7 +4,7 @@ public class HargaBayar05 {
         Scanner input =new Scanner(System.in);
         int harga, jumlah, halBuku;
         double dis, total, bayar, jmlDis;
-        String merk;
+        String merk ;
         System.out.println("Masukkan nama merk buku: ");
         merk=input.nextLine();
         System.out.println("Masukkan jumlah halaman buku: ");
