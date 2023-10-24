@@ -12,10 +12,17 @@ public class WhileGaji05 {
 
         int i = 0;
 
+       
         while (i < jmlKaryawan) {
             System.out.println("Pilihan jabatan - Direktur, Manajer, Karyawan");
             System.out.print("Masukkan jabatan karyawan ke- " + (i+1) + ": ");
             jabatan = sc.next();
+            while (!(jabatan.equalsIgnoreCase("direktur") || jabatan.equalsIgnoreCase("manajer") || jabatan.equalsIgnoreCase("karyawan"))){
+                System.out.println("Jabatan Invalid");
+                System.out.println("Pilihan jabatan - Direktur, Manajer, Karyawan");
+                System.out.print("Masukkan jabatan karyawan ke- " + (i+1) + ": ");
+                jabatan = sc.next();
+            }
             System.out.print("Masukkan jumlah jam lembur: ");
             jmlLembur = sc.nextInt();
             i++;
