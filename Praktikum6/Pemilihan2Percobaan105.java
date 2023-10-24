@@ -1,6 +1,7 @@
 import java.util.Scanner;
 public class Pemilihan2Percobaan105 {
         public static void main(String[] args) {
+            //inputtt
             Scanner input05 = new Scanner (System.in);
             System.out.print("Masukkan tahun : ");
             int tahun = input05.nextInt();
