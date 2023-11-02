@@ -5,9 +5,9 @@ public class Numbers05 {
         Scanner sc = new Scanner (System.in);
 
         int [][] myNumbers = new int [3][];
-        myNumbers [0] = new int[5];
+        myNumbers [0] = new int[3];
         myNumbers [1] = new int[3];
-        myNumbers [2] = new int[1];
+        myNumbers [2] = new int[3];
 
         //inisialisasi myNumbers
         for (int i = 0; i < myNumbers.length; i++) {
