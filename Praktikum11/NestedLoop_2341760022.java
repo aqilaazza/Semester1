@@ -29,6 +29,14 @@ public class NestedLoop_2341760022 {
             }
             System.out.println();
        }
-      
+       // rata rata setiap kota
+       for (int i = 0; i < temps.length; i++) {
+        double rata = 0;
+        for (int temperature : temps[i]) {
+            rata += temperature;
+        }
+        rata /= temps[i].length;
+        System.out.println("Rata-rata kota ke-" + (i + 1) + ": " +rata);
+       }
     }
 }
