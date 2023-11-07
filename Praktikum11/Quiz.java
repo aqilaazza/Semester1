@@ -23,6 +23,7 @@ public class Quiz {
                     success = true;
                     System.out.println("Selamat tebakan anda benar!");
                 }
+                
             } while (!success);
             System.out.print("Apakah anda ingin mengulang permainan (Y/y)?");
             menu = input.nextLine().charAt(0);

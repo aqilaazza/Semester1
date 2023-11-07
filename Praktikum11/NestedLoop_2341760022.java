@@ -1,5 +1,7 @@
 import java.util.Scanner;
 public class NestedLoop_2341760022 {
+    private static int i;
+
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int [][] temps = new int[5][7];
@@ -13,12 +15,20 @@ public class NestedLoop_2341760022 {
             System.out.println();
         }
 
-        for (int i = 0; i < temps.length; i++) {
+       //for (int i = 0; i < temps.length; i++) {
+            //System.out.print("Kota ke-" + (i + 1) + ": ");
+           //for(int j = 0; j < temps[0].length; j++){
+             //  System.out.print(temps[i][j] + " ");
+           //}
+           //System.out.println();
+       //}
+       for (int [] temp : temps) {
             System.out.print("Kota ke-" + (i + 1) + ": ");
-            for(int j = 0; j < temps[0].length; j++){
-                System.out.print(temps[i][j] + " ");
+            for (int temperature : temp) {
+                System.out.print(temperature + " ");
             }
             System.out.println();
-        }
+       }
+      
     }
 }
