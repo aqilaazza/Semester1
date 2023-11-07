@@ -23,7 +23,7 @@ public class NestedLoop_2341760022 {
            //System.out.println();
        //}
        for (int [] temp : temps) {
-            System.out.print("Kota ke-" + (i + 1) + ": ");
+            System.out.print("Kota ke-" + (i + 0) + ": ");
             for (int temperature : temp) {
                 System.out.print(temperature + " ");
             }
