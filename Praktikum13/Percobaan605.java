@@ -3,10 +3,10 @@
 import java.util.Scanner;
 
 public class Percobaan605 {
-        static int hitungLuas (int pjg, int lb) {
+     static int hitungLuas (int pjg, int lb) {
             int Luas = pjg * lb;
             return Luas;
-        }
+    }
         //Fungsi hitungVolume
      static int hitungVolume (int tinggi, int a, int b) {
         int volume = hitungLuas (a,b) * tinggi;
