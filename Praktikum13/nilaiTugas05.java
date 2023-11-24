@@ -1,14 +1,21 @@
 import java.util.Scanner;
 
 public class nilaiTugas05 {
-    static int jmlMhs = 5;
-    static int jmlMinggu = 7;
+    static int jmlMhs;
+    static int jmlMinggu ;
     static int nilaiTertinggi = 0;
     static int mingguNilaiTertinggi = 0;
     static int mhsNilaiTertinggi;
 
-    private static int[][] nilaiMhs = new int[jmlMhs][jmlMinggu];
+    private static int[][] nilaiMhs; 
         public static void main(String[] args) {
+            Scanner sc = new Scanner(System.in);
+            System.out.print("Masukkan jumlah mahasiswa : ");
+            jmlMhs = sc.nextInt();
+            System.out.print("Masukkan jumlah minggu : ");
+            jmlMinggu = sc.nextInt();
+            nilaiMhs = new int [jmlMhs][jmlMinggu];
+
             jmlNilaiMhs();
             tampilNilaiMhs();
             cariNilaiTertinggi();
@@ -16,7 +23,7 @@ public class nilaiTugas05 {
 
         }
         public static void jmlNilaiMhs() {
-            Scanner sc = new Scanner (System.in);
+           Scanner sc = new Scanner (System.in);
             for (int a = 0; a < jmlMhs; a++ ) {
                 System.out.println("Masukkan nilai Mahasiswa ke- " + (a+1));
                 for(int b = 0; b < jmlMinggu; b++) {
