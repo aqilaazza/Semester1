@@ -5,6 +5,7 @@ public class Percobaan205 {
         if (y == 0) {
             return (1);
         } else {
+            System.out.print(x + "x");
             return (x * hitungPangkat(x, y-1));
         }
     }
@@ -16,6 +17,10 @@ public class Percobaan205 {
         System.out.print("Pangkat : ");
         pangkat = sc.nextInt();
 
-        System.out.println(hitungPangkat(bilangan, pangkat));
+        //System.out.println(hitungPangkat(bilangan, pangkat));
+
+        System.out.print("Hasil dari " +bilangan+ "^" +pangkat+ " = ");
+        int hasil = hitungPangkat(bilangan, pangkat);
+        System.out.println("1 = " +hasil);
     }
 }
